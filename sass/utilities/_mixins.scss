@@ -1,0 +1,77 @@
+@import "./variables";
+
+//contenedores
+@mixin container() {
+  @include margin($padding: 6px, $margin: auto);
+  @include glass();
+  box-sizing: border-box;
+  border-radius: 6px;
+  text-transform: uppercase;
+  gap: $gap;
+}
+
+
+
+@mixin glass() {
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur( 3.5px );
+  -webkit-backdrop-filter: blur( 3.5px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+//flex
+@mixin flex($gap, $flex-col, $justify, $items) {
+  display: flex;
+  align-items: $items;
+  justify-content: $justify;
+  text-align: center;
+  gap: $gap;
+  flex-direction: $flex-col;
+}
+
+
+//multimedia
+@mixin bg-image($url) {
+  background-image: $url;
+  background-position: center;
+  background-size: cover;
+  border-radius: $rounded-lg;
+}
+
+//textos
+@mixin h1() {
+  @include margin($margin, $padding);
+  color: aliceblue;
+}
+
+@mixin h2() {
+  @include margin($margin, $padding);
+  font-weight: 600;
+  text-transform: uppercase
+}
+
+@mixin p() {
+  @include margin($margin, $padding);
+  font-weight: 500;
+}
+
+//longitud
+@mixin width-height($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin margin($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+//responsive
+
+@mixin media($breakpoint) {
+  @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}

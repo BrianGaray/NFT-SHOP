@@ -1,0 +1,17 @@
+@use "../../../utilities/mixins";
+@import "../../../utilities/variables";
+
+
+.hape-section {
+  margin: auto;
+
+}
+
+.products {
+  @include mixins.container();
+}
+
+
+h2 {
+  @include mixins.h2();
+}
