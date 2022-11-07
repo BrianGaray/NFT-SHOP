@@ -1,27 +1,59 @@
+const body = document.querySelector("body"),
+  sidebar = body.querySelector("nav"),
+  toggle = body.querySelector(".toggle"),
+  searchBtn = body.querySelector(".search-box"),
+  modeSwitch = body.querySelector(".toggle-switch"),
+  modeText = body.querySelector(".mode-text");
 
-const body = document.querySelector('body'),
-sidebar = body.querySelector('nav'),
-toggle = body.querySelector(".toggle"),
-searchBtn = body.querySelector(".search-box"),
-modeSwitch = body.querySelector(".toggle-switch"),
-modeText = body.querySelector(".mode-text");
+toggle.addEventListener("click", () => {
+  sidebar.classList.toggle("close");
+});
 
+searchBtn.addEventListener("click", () => {
+  sidebar.classList.remove("close");
+});
 
-toggle.addEventListener("click" , () =>{
-sidebar.classList.toggle("close");
-})
+modeSwitch.addEventListener("click", () => {
+  body.classList.toggle("dark");
 
-searchBtn.addEventListener("click" , () =>{
-sidebar.classList.remove("close");
-})
+  if (body.classList.contains("dark")) {
+    modeText.innerText = "Light mode";
+  } else {
+    modeText.innerText = "Dark mode";
+  }
+});
 
-modeSwitch.addEventListener("click" , () =>{
-body.classList.toggle("dark");
+// swiper
 
-if(body.classList.contains("dark")){
-  modeText.innerText = "Light mode";
-}else{
-  modeText.innerText = "Dark mode";
-  
-}
+const swiper = new Swiper(".swiper", {
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 1,
+  paginationClickable: true,
+  spaceBetween: 10,
+
+  autoplay: {
+    delay: 4000,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  draggable: true,
+  breakpoints: {
+    1536: {
+      slidesPerView: 4,
+    },
+
+    1024: {
+      slidesPerView: 3,
+    },
+    540: {
+      slidesPerView: 2,
+    },
+    320: {
+      slidesPerView: 1,
+    },
+  },
 });

@@ -2,10 +2,10 @@
 
 //contenedores
 @mixin container() {
-  @include margin($padding: 6px, $margin: auto);
+  @include margin($padding: 0.5rem, $margin: auto);
   @include glass();
   box-sizing: border-box;
-  border-radius: 6px;
+  border-radius: 0.5rem;
   text-transform: uppercase;
   gap: $gap;
 }
