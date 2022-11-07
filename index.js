@@ -49,7 +49,7 @@ const swiper = new Swiper(".swiper", {
     1024: {
       slidesPerView: 3,
     },
-    540: {
+    640: {
       slidesPerView: 2,
     },
     320: {

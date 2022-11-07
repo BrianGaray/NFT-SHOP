@@ -2,13 +2,12 @@
 @import "../../utilities/variables";
 
 
-.hape-section {
-  margin: auto;
 
-}
 
 .products {
-  @include mixins.container();
+  @include mixins.media(lg){
+    @include mixins.container();
+  }
 }
 
 

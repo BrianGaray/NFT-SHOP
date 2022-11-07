@@ -105,6 +105,12 @@ body.dark {
   .page {
     background-color: #242526;
     background-image: linear-gradient(1deg, #242526 3%, #190020a1 91%);
+    h2 {
+      color: #ccc;
+    }
+    span {
+      color:  #ccc;
+    }
   }
 }
 
