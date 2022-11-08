@@ -3,7 +3,7 @@
 //contenedores
 @mixin container() {
   @include margin($padding: 0.5rem, $margin: auto);
-  @include glass();
+  @include glass-two();
   box-sizing: border-box;
   border-radius: 0.5rem;
   text-transform: uppercase;
@@ -13,11 +13,19 @@
 
 
 @mixin glass() {
+  background: rgba(255, 255, 255, 0.103);
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur( 1.5px );
+  -webkit-backdrop-filter: blur( 1.5px );
+  border: 1px solid rgba(255, 255, 255, 0.041);
+}
+
+@mixin glass-two() {
   background: rgba( 255, 255, 255, 0.15 );
   box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.37);
   backdrop-filter: blur( 3.5px );
   -webkit-backdrop-filter: blur( 3.5px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.055);
 }
 
 
