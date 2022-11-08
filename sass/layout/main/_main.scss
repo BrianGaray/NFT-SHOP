@@ -1,31 +1,62 @@
 @use "../../utilities/mixins";
 @import "../../utilities/variables";
 
-
-
-
 .products {
-  @include mixins.media(lg){
+  @include mixins.media(lg) {
     @include mixins.container();
   }
 }
-
 
 h2 {
   @include mixins.h2();
 }
 
 .swiper-button-prev,
-.swiper-button-next{
+.swiper-button-next {
   color: rgba(240, 248, 255, 0.233);
 }
 .swiper-button-prev:hover,
-.swiper-button-next:hover{
+.swiper-button-next:hover {
   color: rgba(240, 248, 255, 0.87);
-  transition: .5s;
+  transition: 0.5s;
 }
 
-
-img{
+img {
   border-radius: 0.5rem;
+}
+
+.hape-collection {
+  height: 50vh;
+  .img {
+    max-height: 24rem;
+    background-image: url(https://i.seadn.io/gcs/files/1f123f2c34f85afdf69e25886a1527f2.png?auto=format&w=1920);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  }
+}
+
+.azuka-collection {
+  height: 50vh;
+  .img {
+    max-height: 24rem;
+    background-image: url(https://i.seadn.io/gae/LWKTygRpXFZOxozYA2l7x00V-fEciYYLniFTkyY2kbVTwybEVIa1FUpgd9jNaHG1JoJQRImDd_eWCVDQrNYy9ayrBXQIxIDZBG3l?auto=format&w=1920);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  }
+}
+
+.godhates-collection {
+  height: 50vh;
+  .img {
+    max-height: 24rem;
+    background-image: url(https://openseauserdata.com/files/16bbf107b506d8d6b110c4e05eba7043.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  }
 }
