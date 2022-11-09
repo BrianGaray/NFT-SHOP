@@ -465,20 +465,18 @@ body.dark .page .text {
   color: var(--text-color);
 }
 
-@media screen and (min-width: 1024px) {
-  .products {
-    margin: auto;
-    padding: 0.5rem;
-    background: rgba(255, 255, 255, 0.014);
-    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur(3.5px);
-    -webkit-backdrop-filter: blur(3.5px);
-    border: 1px solid rgba(255, 255, 255, 0.055);
-    box-sizing: border-box;
-    border-radius: 0.5rem;
-    text-transform: uppercase;
-    gap: 1em;
-  }
+.products {
+  margin: auto;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.014);
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border: 1px solid rgba(255, 255, 255, 0.055);
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  gap: 1em;
 }
 
 h2 {

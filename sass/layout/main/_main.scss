@@ -2,9 +2,9 @@
 @import "../../utilities/variables";
 
 .products {
-  @include mixins.media(lg) {
+  
     @include mixins.container();
-  }
+  
 }
 
 h2 {
