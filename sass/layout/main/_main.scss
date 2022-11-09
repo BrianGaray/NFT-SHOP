@@ -27,38 +27,52 @@ img {
 
 .nft {
   &-collectibles {
-    height: 50vh;
+    background: #fff;
+    height: 18rem;
+    border-radius: 0.5rem;
     .img {
-      max-height: 24rem;
-      background-image: url(../img/art/nft-2.jpg);
+      max-height: 14rem;
+
+      background-image: url(../img/index/collectibles.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       height: 100vh;
-    }
-  }
-  &-3d {
-    height: 50vh;
-    .img {
-      max-height: 24rem;
-      background-image: url(../img/art/nft-2.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 100vh;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
     }
   }
   &-art {
-    height: 50vh;
+    background: #fff;
+    height: 18rem;
+    border-radius: 0.5rem;
     .img {
-      max-height: 24rem;
-      background-image: url(../img/art/nft-2.jpg);
+      max-height: 14rem;
+      background-image: url(../img/index/art.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       height: 100vh;
+
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+  }
+  &-3d {
+    height: 18rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    .img {
+      max-height: 14rem;
+
+      background-image: url(../img/index/3d.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
     }
   }
 }
-
-

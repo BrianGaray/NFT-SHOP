@@ -10,6 +10,10 @@ header {
     $justify: center,
     $items: center
   );
+  background-image: url(https://opensea.io/static/images/home-gradient-light.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .btn {
@@ -103,8 +107,8 @@ body.dark {
   --text-color: #ccc;
 
   .page {
-    background-color:black;
-    background-image: linear-gradient(1deg, #242526 3%, #190020a1 91%);
+    background-color:#242526;
+    background-image: linear-gradient(1deg, #242526 3%, #19002017 91%);
     h2 {
       color: #ccc;
     }

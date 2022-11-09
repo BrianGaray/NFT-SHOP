@@ -83,6 +83,10 @@ header {
   text-align: center;
   gap: 0;
   flex-direction: column;
+  background-image: url(https://opensea.io/static/images/home-gradient-light.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .btn {
@@ -171,8 +175,8 @@ body.dark {
   --text-color: #ccc;
 }
 body.dark .page {
-  background-color: black;
-  background-image: linear-gradient(1deg, #242526 3%, rgba(25, 0, 32, 0.631372549) 91%);
+  background-color: #242526;
+  background-image: linear-gradient(1deg, #242526 3%, rgba(25, 0, 32, 0.0901960784) 91%);
 }
 body.dark .page h2 {
   color: #ccc;
@@ -465,7 +469,7 @@ body.dark .page .text {
   .products {
     margin: auto;
     padding: 0.5rem;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.014);
     box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.37);
     backdrop-filter: blur(3.5px);
     -webkit-backdrop-filter: blur(3.5px);
@@ -500,37 +504,49 @@ img {
 }
 
 .nft-collectibles {
-  height: 50vh;
+  background: #fff;
+  height: 18rem;
+  border-radius: 0.5rem;
 }
 .nft-collectibles .img {
-  max-height: 24rem;
-  background-image: url(../img/art/nft-2.jpg);
+  max-height: 14rem;
+  background-image: url(../img/index/collectibles.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
-}
-.nft-3d {
-  height: 50vh;
-}
-.nft-3d .img {
-  max-height: 24rem;
-  background-image: url(../img/art/nft-2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 .nft-art {
-  height: 50vh;
+  background: #fff;
+  height: 18rem;
+  border-radius: 0.5rem;
 }
 .nft-art .img {
-  max-height: 24rem;
-  background-image: url(../img/art/nft-2.jpg);
+  max-height: 14rem;
+  background-image: url(../img/index/art.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.nft-3d {
+  height: 18rem;
+  background: #fff;
+  border-radius: 0.5rem;
+}
+.nft-3d .img {
+  max-height: 14rem;
+  background-image: url(../img/index/3d.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
