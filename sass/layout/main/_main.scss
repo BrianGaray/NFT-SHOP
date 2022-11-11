@@ -2,9 +2,7 @@
 @import "../../utilities/variables";
 
 .products {
-  
-    @include mixins.container();
-  
+  @include mixins.container();
 }
 
 h2 {
@@ -23,56 +21,14 @@ h2 {
 
 img {
   border-radius: 0.5rem;
+  
 }
 
-.nft {
-  &-collectibles {
-    background: #fff;
-    height: 18rem;
-    border-radius: 0.5rem;
-    .img {
-      max-height: 14rem;
+.collections {
+  @include mixins.container();
+  .img {
 
-      background-image: url(../img/index/collectibles.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 100vh;
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
-    }
-  }
-  &-art {
-    background: #fff;
-    height: 18rem;
-    border-radius: 0.5rem;
-    .img {
-      max-height: 14rem;
-      background-image: url(../img/index/art.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 100vh;
-
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
-    }
-  }
-  &-3d {
-    height: 18rem;
-    background: #fff;
-    border-radius: 0.5rem;
-    .img {
-      max-height: 14rem;
-
-      background-image: url(../img/index/3d.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 100vh;
-
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
-    }
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
   }
 }

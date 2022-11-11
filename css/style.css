@@ -83,7 +83,7 @@ header {
   text-align: center;
   gap: 0;
   flex-direction: column;
-  background-image: url(https://opensea.io/static/images/home-gradient-light.png);
+  background-image: url(../img/index/home-gradient-light.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -102,38 +102,6 @@ header {
   background-color: rgba(207, 106, 177, 0.5960784314);
 }
 
-/*:root {
-   ===== Colors ===== 
-  --body-color: #e4e9f7;
-  --sidebar-color: #fff;
-  --primary-color: #cf6ab198;
-  --primary-color-light: #f6f5ff;
-  --toggle-color: #ddd;
-  --text-color: #707070;*/
-/* ====== Transition ====== 
-  --tran-03: all 0.2s ease;
-  --tran-03: all 0.3s ease;
-  --tran-04: all 0.3s ease;
-  --tran-05: all 0.3s ease;
-}
-
-::selection {
-  background-color: var(--primary-color);
-  color: #fff;
-}
-
-.page {
-  background-color: #ffffff;
-  background-image: linear-gradient(1deg, #f6f5ff 3%, #cf6ab198 91%);
-
-  h2{
-    color: #707070;
-  }
-  span {
-    color: #cf6ab198;
-  }
-}
-*/
 :root {
   /* ===== Colors ===== */
   --body-color: #f6f5ff;
@@ -149,7 +117,7 @@ header {
   --tran-05: all 0.3s ease;
 }
 
-.page h2 {
+.page {
   color: #707070;
 }
 .page span {
@@ -358,7 +326,7 @@ body.dark .sidebar li a:hover .text {
 }
 
 .sidebar .menu-bar {
-  height: calc(100% - 3.4375rem);
+  height: calc(100% - 55px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -501,48 +469,20 @@ img {
   border-radius: 0.5rem;
 }
 
-.nft-collectibles {
-  background: #fff;
-  height: 18rem;
+.collections {
+  margin: auto;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.014);
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border: 1px solid rgba(255, 255, 255, 0.055);
+  box-sizing: border-box;
   border-radius: 0.5rem;
+  text-transform: uppercase;
+  gap: 1em;
 }
-.nft-collectibles .img {
-  max-height: 14rem;
-  background-image: url(../img/index/collectibles.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-.nft-art {
-  background: #fff;
-  height: 18rem;
-  border-radius: 0.5rem;
-}
-.nft-art .img {
-  max-height: 14rem;
-  background-image: url(../img/index/art.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-.nft-3d {
-  height: 18rem;
-  background: #fff;
-  border-radius: 0.5rem;
-}
-.nft-3d .img {
-  max-height: 14rem;
-  background-image: url(../img/index/3d.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
+.collections .img {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
