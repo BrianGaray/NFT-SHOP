@@ -32,6 +32,6 @@ sr = ScrollReveal({
 });
 
 sr.reveal(".products", {
-  duration:2000,
+  duration:1200,
   distance: "20px",
 });
