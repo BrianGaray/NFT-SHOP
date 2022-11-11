@@ -27,12 +27,11 @@ modeSwitch.addEventListener("click", () => {
 
 sr = ScrollReveal({
   reset: true,
-  distance: "100px",
-  delay: 500,
+  distance: "20px",
+
 });
 
 sr.reveal(".products", {
-  delay: 500,
+  duration:2000,
   distance: "20px",
-  duration:1500,
 });
