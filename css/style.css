@@ -83,7 +83,6 @@ header {
   text-align: center;
   gap: 0;
   flex-direction: column;
-  background-image: url(../img/index/home-gradient-light.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
