@@ -397,6 +397,52 @@ a {
   align-items: center;
 }
 
+.preloader {
+  width: 100vw;
+  height: 100vh;
+  background: #f6f5ff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+.preloader .preloader .dark {
+  background: black;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+.loader:after {
+  box-shadow: 0 2px 0 #e0e0fb inset;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .products {
   margin: auto;
   padding: 0.5rem;

@@ -1,3 +1,8 @@
+const preloader = document.querySelector(".preloader")
+window.addEventListener("load" , () =>{
+  preloader.style.display = "none";
+})
+
 const body = document.querySelector("body"),
   sidebar = body.querySelector("nav"),
   toggle = body.querySelector(".toggle"),
