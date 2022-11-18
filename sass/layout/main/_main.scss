@@ -47,7 +47,7 @@
 }
 
 footer {
-  @include mixins.container();
+  @include mixins.container-two();
   border-radius: 0;
 }
 
@@ -70,6 +70,14 @@ a {
 
 .about {
   height: 56px;
+}
+
+.notable{
+border-color: #7070702d;
+}
+
+.items{
+  border-color: #7070702d;
 }
 
 .swiper-button-prev,

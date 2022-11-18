@@ -1,7 +1,7 @@
-const preloader = document.querySelector(".preloader")
-window.addEventListener("load" , () =>{
+const preloader = document.querySelector(".preloader");
+window.addEventListener("load", () => {
   preloader.style.display = "none";
-})
+});
 
 const body = document.querySelector("body"),
   sidebar = body.querySelector("nav"),
@@ -14,8 +14,6 @@ toggle.addEventListener("click", () => {
   sidebar.classList.toggle("close");
 });
 
-
-
 modeSwitch.addEventListener("click", () => {
   body.classList.toggle("dark");
 
@@ -24,45 +22,21 @@ modeSwitch.addEventListener("click", () => {
   } else {
     modeText.innerText = "Dark mode";
   }
+
+  //local storage
+
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  } else {
+    localStorage.setItem("dark-mode", "false");
+  }
 });
 
-// swiper
+if (localStorage.getItem("dark-mode") === "true") {
+  document.body.classList.add("dark");
+  btnSwitch.classList.add("active");
+} else {
+  document.body.classList.remove("dark");
+  btnSwitch.classList.remove("active");
+}
 
-const swiper = new Swiper(".swiper", {
-  direction: "horizontal",
-  loop: true,
-  slidesPerView: 1,
-  paginationClickable: true,
-  spaceBetween: 10,
-  draggable: true,
-  
-  autoplay: {
-    delay: 3000,
-  },
-
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-  },
-  
-  breakpoints: {
-    1536: {
-      slidesPerView: 4,
-    },
-    1200: {
-      slidesPerView: 4,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-    640: {
-      slidesPerView: 2,
-    },
-    320: {
-      slidesPerView: 1,
-    },
-  },
-});

@@ -3,45 +3,40 @@
 window.sr = ScrollReveal({
   reset: true,
   distance: "20px",
+  delay: 200,
+  duration: 1000,
 });
 
 sr.reveal("header", {
-  duration: 1200,
-  delay: 200,
   distance: "1px",
 });
 
 sr.reveal(".about", {
-  duration: 1200,
-  delay: 200,
   distance: "20px",
 });
 
 sr.reveal(".items", {
-  duration: 1200,
-  delay: 200,
+  distance: "20px",
+});
+
+sr.reveal(".notable", {
   distance: "20px",
 });
 
 sr.reveal(".swiper", {
-  duration: 1200,
-  delay: 200,
   distance: "20px",
 });
 
 sr.reveal(".collections", {
-  duration: 1200,
-  delay: 200,
   distance: "20px",
 });
 
 sr.reveal(".products", {
-  duration: 1200,
   distance: "20px",
 });
 
-sr.reveal(".contact", {
-  duration: 1200,
-  distance: "20px",
+sr.reveal("footer", {
+  duration: 1000,
+  distance: "1px",
   delay: 200,
 });
