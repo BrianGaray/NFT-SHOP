@@ -16,106 +16,109 @@
 
   <body>
     <nav class="sidebar close">
-      <div class="bars">
-        <i class="bx bx-chevron-right toggle"></i>
-      </div>
+      <section class="menu-bar flex justify-between flex-col">
+        <div class="bars">
+          <ul class="bottom-content flex flex-col gap-4">
+            <li class="nav-link">
+              <a>
+                <i class="bx bx-menu toggle icon"></i>
 
-      <div class="menu-bar">
-        <div class="menu">
-          <ul class="menu-links">
+                <h3 class="text nav-text">Menu</h3>
+              </a>
+            </li>
+
             <li class="nav-link">
               <a href="../index.html">
                 <i class="bx bx-grid-alt icon"></i>
-                <span class="text nav-text">Home</span>
+
+                <h3 class="text nav-text">Home</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-links">
+          <ul class="flex flex-col gap-4">
+            <li class="nav-link">
+              <a href="../pages/azuki.html">
+                <img src="../img/index/menu-azuki.webp" alt="Azuki" />
+
+                <h3 class="text nav-text">Azuki</h3></a
+              >
+            </li>
+
+            <li class="nav-link">
+              <a href="../pages/CryptoRunners.html">
+                <img src="../img/index/menu-runners.webp" alt="Cryptorunner" />
+
+                <h3 class="text nav-text">Runners</h3>
               </a>
             </li>
 
             <li class="nav-link">
-              <a href="./azuki.html">
-                <i class="bx bx-image-alt icon"></i>
-                <span class="text nav-text">Hape</span>
-              </a>
-            </li>
-            <li class="nav-link">
-              <a href="./azukiArt.html">
-                <i class="bx bx-image-alt icon"></i>
-                <span class="text nav-text">Hape</span>
-              </a>
-            </li>
-            <li class="nav-link">
-              <a href="./hape.html">
-                <i class="bx bx-image-alt icon"></i>
-                <span class="text nav-text">Hape</span>
-              </a>
-            </li>
+              <a href="../pages/hape.html">
+                <img src="../img/index/hape.jpg" alt="HAPE PRIME" />
 
+                <h3 class="text nav-text">Hape</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content flex flex-col gap-4">
+          <ul>
             <li class="nav-link">
               <a href="#">
                 <i class="bx bxs-cart-alt icon"></i>
                 <span class="text nav-text">Cart</span>
               </a>
             </li>
-
-            <li class="search-box">
-              <i class="bx bx-search icon"></i>
-              <input type="text" placeholder="Search..." />
-            </li>
           </ul>
-        </div>
 
-        <div class="bottom-content">
-          <li class="mode">
-            <div class="sun-moon">
-              <i class="bx bx-moon icon moon"></i>
-              <i class="bx bx-sun icon sun"></i>
-            </div>
-            <span class="mode-text text">Dark mode</span>
+          <div class="bottom-content">
+            <li class="mode">
+              <span class="mode-text text hidden">Dark mode</span>
 
-            <div class="toggle-switch">
-              <span class="switch"></span>
-            </div>
-          </li>
+              <div class="toggle-switch">
+                <span class="switch"></span>
+              </div>
+              <div class="sun-moon">
+                <i class="bx bx-moon icon moon"></i>
+                <i class="bx bx-sun icon sun"></i>
+              </div>
+            </li>
+          </div>
         </div>
-      </div>
+      </section>
     </nav>
     <section class="page">
-      <header class="h-80 max-w-screen-2xl m-auto">
-        <div class="first-title">
-          <div class="title-gradient">
-            <h1>
-              <span
-                style="
-                  --start-color: #7928ca;
-                  --end-color: #ff0080;
-                  --content: 'NFT';
-                "
-              >
-                NFT
-              </span>
-              <span
-                style="
-                  --start-color: #7928ca;
-                  --end-color: #ff0080;
-                  --content: 'Shop';
-                  --animation: a2;
-                "
-              >
-                Shop
-              </span>
-            </h1>
-          </div>
-          <h2>Explore, collect, and sell NFTs</h2>
-        </div>
-      </header>
+      <header
+        class="h-56 w-full m-auto bg-[url('../img/hape/responsive/hape-lg.webp')]"
+      ></header>
       <main>
         <section class="nft-section">
           <div
-            class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8"
+            class="mx-auto w-11/12 py-10 px-4 sm:py-12 sm:px-6 lg:w-full lg:max-w-7xl lg:px-8"
           >
-            <h2 class="text-2xl text-center">Notable collections</h2>
+            <div class="about flex flex-col gap-2 h-full">
+              <h1 class="text-xl 2xl:text-2xl flex items-center gap-1">
+                HAPE PRIME
+                <i class="bx bxs-badge-check text-cyan-500"></i>
+              </h1>
+              <h3 class="font-medium text-sm">
+                8K NEXT-GENERATION, HIGH FASHION HAPES
+              </h3>
+              <p class="max-w-screen-xl py-2 font-medium text-base">
+                Unique, fully 3D and built to unite the ape multiverse. Designed
+                and styled by Digimental.
+              </p>
+            </div>
+            <h4 class="text-end p-2 border-t-2 mt-4 md:mt-8 lg:mt-12">
+              12 items
+            </h4>
 
             <div
-              class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4"
+              class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-4"
             >
               <div class="products relative">
                 <div
@@ -599,6 +602,32 @@
           </div>
         </section>
       </main>
+      <footer class="mt-6">
+        <div
+          class="max-w-7xl mx-auto pt-16 pb-2 px-4 overflow-hidden sm:px-6 lg:px-8"
+        >
+          <div class="mt-8 flex justify-center space-x-6">
+            <a href="#" class="hover:text-gray-500 flex flex-col gap-1">
+              <h2>View code</h2>
+
+              <i class="bx bxl-github text-xl"></i>
+            </a>
+
+            <a href="#" class="hover:text-gray-500 flex-col gap-1">
+              <h2>Contact</h2>
+              <i class="bx bx-envelope text-xl"></i>
+            </a>
+
+            <a href="#" class="hover:text-gray-500 flex-col gap-1">
+              <h2>Linkedin</h2>
+              <i class="bx bxl-linkedin-square text-xl"></i>
+            </a>
+          </div>
+          <p class="text-center text-xs text-gray-400 pt-16">
+            &copy; 2022 Developed by Brian Garay.
+          </p>
+        </div>
+      </footer>
     </section>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   </body>

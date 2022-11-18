@@ -1,12 +1,35 @@
 @use "../../utilities/mixins";
 @import "../../utilities/variables";
 
+
 .products {
   @include mixins.container();
 }
 
+footer{
+  @include mixins.container();
+  border-radius: 0;
+}
+
+h1 {
+  @include mixins.h1();
+}
 h2 {
   @include mixins.h2();
+  text-transform: capitalize;
+}
+
+p{
+  @include mixins.p();
+  text-transform: capitalize;
+}
+
+a{
+  text-transform: capitalize;
+}
+
+.about{
+  height: 56px;
 }
 
 .swiper-button-prev,
@@ -21,8 +44,9 @@ h2 {
 
 img {
   border-radius: 0.5rem;
-  
+ 
 }
+
 
 .collections {
   @include mixins.container();

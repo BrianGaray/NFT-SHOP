@@ -39,25 +39,17 @@
   flex-direction: $flex-col;
 }
 
-
-//multimedia
-@mixin bg-image($url) {
-  background-image: $url;
-  background-position: center;
-  background-size: cover;
-  border-radius: $rounded-lg;
-}
-
 //textos
 @mixin h1() {
   @include margin($margin, $padding);
-  color: aliceblue;
+  font-weight: 700!important;
+  text-transform: uppercase
 }
 
 @mixin h2() {
   @include margin($margin, $padding);
-  font-weight: 600;
-  text-transform: uppercase
+  font-weight: 600!important;
+ 
 }
 
 @mixin p() {
@@ -66,10 +58,6 @@
 }
 
 //longitud
-@mixin width-height($width, $height) {
-  width: $width;
-  height: $height;
-}
 
 @mixin margin($margin, $padding) {
   margin: $margin;

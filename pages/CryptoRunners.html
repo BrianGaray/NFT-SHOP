@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" class="text-xs sm:text-sm lg:text-lg xl:text-xl 2xl:text-2xl">
+<html
+  lang="en"
+  class="sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl"
+>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,86 +19,108 @@
 
   <body>
     <nav class="sidebar close">
-      <div class="bars">
-        <i class="bx bx-chevron-right toggle"></i>
-      </div>
+      <section class="menu-bar flex justify-between flex-col">
+        <div class="bars">
+          <ul class="bottom-content flex flex-col gap-4">
+            <li class="nav-link">
+              <a>
+                <i class="bx bx-menu toggle icon"></i>
 
-      <div class="menu-bar">
-        <div class="menu">
-          <ul class="menu-links">
+                <h3 class="text nav-text">Menu</h3>
+              </a>
+            </li>
+
             <li class="nav-link">
               <a href="../index.html">
                 <i class="bx bx-grid-alt icon"></i>
-                <span class="text nav-text">Home</span>
+
+                <h3 class="text nav-text">Home</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-links">
+          <ul class="flex flex-col gap-4">
+            <li class="nav-link">
+              <a href="../pages/azuki.html">
+                <img src="../img/index/menu-azuki.webp" alt="Azuki" />
+
+                <h3 class="text nav-text">Azuki</h3></a
+              >
+            </li>
+
+            <li class="nav-link">
+              <a href="../pages/CryptoRunners.html">
+                <img src="../img/index/menu-runners.webp" alt="Cryptorunner" />
+
+                <h3 class="text nav-text">Runners</h3>
               </a>
             </li>
 
             <li class="nav-link">
-              <a href="./azuki.html">
-                <i class="bx bx-image-alt icon"></i>
-                <span class="text nav-text">Hape</span>
-              </a>
-            </li>
-            <li class="nav-link">
-              <a href="./CryptoRunners.html">
-                <i class="bx bx-image-alt icon"></i>
-                <span class="text nav-text">Hape</span>
-              </a>
-            </li>
-            <li class="nav-link">
-              <a href="./hape.html">
-                <i class="bx bx-image-alt icon"></i>
-                <span class="text nav-text">Hape</span>
-              </a>
-            </li>
+              <a href="../pages/hape.html">
+                <img src="../img/index/hape.jpg" alt="HAPE PRIME" />
 
+                <h3 class="text nav-text">Hape</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content flex flex-col gap-4">
+          <ul>
             <li class="nav-link">
               <a href="#">
                 <i class="bx bxs-cart-alt icon"></i>
                 <span class="text nav-text">Cart</span>
               </a>
             </li>
-
-            <li class="search-box">
-              <i class="bx bx-search icon"></i>
-              <input type="text" placeholder="Search..." />
-            </li>
           </ul>
-        </div>
 
-        <div class="bottom-content">
-          <li class="mode">
-            <div class="sun-moon">
-              <i class="bx bx-moon icon moon"></i>
-              <i class="bx bx-sun icon sun"></i>
-            </div>
-            <span class="mode-text text">Dark mode</span>
+          <div class="bottom-content">
+            <li class="mode">
+              <span class="mode-text text hidden">Dark mode</span>
 
-            <div class="toggle-switch">
-              <span class="switch"></span>
-            </div>
-          </li>
+              <div class="toggle-switch">
+                <span class="switch"></span>
+              </div>
+              <div class="sun-moon">
+                <i class="bx bx-moon icon moon"></i>
+                <i class="bx bx-sun icon sun"></i>
+              </div>
+            </li>
+          </div>
         </div>
-      </div>
+      </section>
     </nav>
     <section class="page">
       <header
-        class="h-48 w-full m-auto bg-[url('https://i.seadn.io/gae/cnxM00B4Wptp5K7C_PrsoIXNwNv-9PRop94BlffsoHqyFA9P11uEJmAEI1jWx_AkNZy1d9nOYfCERkFhSFcu8Z1SCX9sNt1_JLpJ0g?auto=format&w=3840')] 
-        lg:bg-[url('../img/CryptoRunners/webp/CryptoRunners.webp')]"
+        class="h-56 w-full m-auto bg-[url('../img/CryptoRunners/responsive/CryptoRunners-lg.webp')]"
       ></header>
       <main>
         <section class="nft-section">
           <div
-            class="mx-auto max-w-2xl py-10 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8"
+            class="mx-auto w-11/12 py-10 px-4 sm:py-12 sm:px-6 lg:w-full lg:max-w-7xl lg:px-8"
           >
-            <h2 class="text-lg lg:text-xl p-2 px-4 flex items-center">
-              CryptoRunners<i class="bx bxs-badge-check text-cyan-500"></i>
-            </h2>
-            <p class="px-4">
-              CryptoRunners is a collection of 1000 unique digital Runners.
-            </p>
+            <div class="about overflow-auto h-28 md:h-full">
+              <h1 class="text-xl 2xl:text-2xl flex items-center gap-1">
+                Crypto Runners<i class="bx bxs-badge-check text-cyan-500"></i>
+              </h1>
+              <p class="max-w-screen-xl py-2 font-medium text-base">
+                CryptoRunners is a collection of 1000 unique digital Runners.
+                Each movement component and all combinations are created
+                randomly using a generator developed Robert Norenberg. Each raw
+                element is exported to a LQ PNG file; subsequently, each
+                Cryptorunner is manually composed in a HQ 480x480 GIF format.
+                The uniqueness is controlled through an SQL database.
+              </p>
+            </div>
+            <h3 class="text-end p-2 border-t-4 mt-4 md:mt-8 lg:mt-12">
+              12 items
+            </h3>
             <div
-              class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-6"
+              class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-4"
             >
               <div class="products relative">
                 <div
@@ -122,7 +147,7 @@
                           aria-hidden="true"
                           class="absolute inset-0"
                         ></span>
-                        CryptoRunners #0001
+                        Runners #0001
                       </a>
                     </h3>
                   </div>
@@ -154,7 +179,7 @@
                           aria-hidden="true"
                           class="absolute inset-0"
                         ></span>
-                        CryptoRunners #0002
+                        Runners #0002
                       </a>
                     </h3>
                   </div>
@@ -186,7 +211,7 @@
                           aria-hidden="true"
                           class="absolute inset-0"
                         ></span>
-                        CryptoRunners #0021
+                        Runners #0021
                       </a>
                     </h3>
                   </div>
@@ -218,7 +243,7 @@
                           aria-hidden="true"
                           class="absolute inset-0"
                         ></span>
-                        CryptoRunners #0056
+                        Runners #0056
                       </a>
                     </h3>
                   </div>
@@ -250,7 +275,7 @@
                           aria-hidden="true"
                           class="absolute inset-0"
                         ></span>
-                        CryptoRunners #0066
+                        Runners #0066
                       </a>
                     </h3>
                   </div>
@@ -282,7 +307,7 @@
                           aria-hidden="true"
                           class="absolute inset-0"
                         ></span>
-                        CryptoRunners #0288
+                        Runners #0288
                       </a>
                     </h3>
                   </div>
@@ -314,7 +339,7 @@
                           aria-hidden="true"
                           class="absolute inset-0"
                         ></span>
-                        CryptoRunners #0292
+                        Runners #0292
                       </a>
                     </h3>
                   </div>
@@ -328,11 +353,11 @@
                   <picture>
                     <source
                       type="image/webp"
-                      srcset="..//img/CryptoRunners/webp/0900.webp"
+                      srcset="..//img/CryptoRunners/webp/0471.webp"
                     />
                     <img
-                      src="../img/CryptoRunners/webp/0900.webp"
-                      alt="CryptoRunners #0900"
+                      src="../img/CryptoRunners/webp/0471.webp"
+                      alt="CryptoRunners #0471"
                       class="h-full w-full object-cover object-center lg:h-full lg:w-full"
                       loading="lazy"
                     />
@@ -346,7 +371,7 @@
                           aria-hidden="true"
                           class="absolute inset-0"
                         ></span>
-                        CryptoRunners #0900
+                        Runners #0471
                       </a>
                     </h3>
                   </div>
@@ -378,7 +403,7 @@
                           aria-hidden="true"
                           class="absolute inset-0"
                         ></span>
-                        CryptoRunners #0993
+                        Runners #0993
                       </a>
                     </h3>
                   </div>
@@ -410,7 +435,7 @@
                           aria-hidden="true"
                           class="absolute inset-0"
                         ></span>
-                        CryptoRunners #0998
+                        Runners #0998
                       </a>
                     </h3>
                   </div>
@@ -424,11 +449,11 @@
                   <picture>
                     <source
                       type="image/webp"
-                      srcset="..//img/CryptoRunners/webp/1000.webp"
+                      srcset="..//img/CryptoRunners/webp/0229.webp"
                     />
                     <img
-                      src="../img/CryptoRunners/webp/1000.webp"
-                      alt="CryptoRunners #1000"
+                      src="../img/CryptoRunners/webp/0229.webp"
+                      alt="CryptoRunners #0229"
                       class="h-full w-full object-cover object-center lg:h-full lg:w-full"
                       loading="lazy"
                     />
@@ -442,7 +467,7 @@
                           aria-hidden="true"
                           class="absolute inset-0"
                         ></span>
-                        CryptoRunners #1000
+                        Runners #0229
                       </a>
                     </h3>
                   </div>
@@ -474,7 +499,7 @@
                           aria-hidden="true"
                           class="absolute inset-0"
                         ></span>
-                        CryptoRunners #0046
+                        Runners #0046
                       </a>
                     </h3>
                   </div>
@@ -486,6 +511,32 @@
           </div>
         </section>
       </main>
+      <footer class="mt-6">
+        <div
+          class="max-w-7xl mx-auto pt-16 pb-2 px-4 overflow-hidden sm:px-6 lg:px-8"
+        >
+          <div class="mt-8 flex justify-center space-x-6">
+            <a href="#" class="hover:text-gray-500 flex flex-col gap-1">
+              <h2>View code</h2>
+
+              <i class="bx bxl-github text-xl"></i>
+            </a>
+
+            <a href="#" class="hover:text-gray-500 flex-col gap-1">
+              <h2>Contact</h2>
+              <i class="bx bx-envelope text-xl"></i>
+            </a>
+
+            <a href="#" class="hover:text-gray-500 flex-col gap-1">
+              <h2>Linkedin</h2>
+              <i class="bx bxl-linkedin-square text-xl"></i>
+            </a>
+          </div>
+          <p class="text-center text-xs text-gray-400 pt-16">
+            &copy; 2022 Developed by Brian Garay.
+          </p>
+        </div>
+      </footer>
     </section>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   </body>

@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" class="text-xs sm:text-sm lg:text-lg xl:text-xl 2xl:text-2xl">
+<html
+  lang="en"
+  class="sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl"
+>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,70 +24,86 @@
 
   <body>
     <nav class="sidebar close">
-      <div class="bars">
-        <i class="bx bx-chevron-right toggle"></i>
-      </div>
+      <section class="menu-bar flex justify-between flex-col">
+        <div class="bars">
+          <ul class="bottom-content flex flex-col gap-4">
+            <li class="nav-link">
+              <a>
+                <i class="bx bx-menu toggle icon"></i>
 
-      <div class="menu-bar">
-        <div class="menu">
-          <ul class="menu-links">
+                <h3 class="text nav-text">Menu</h3>
+              </a>
+            </li>
+
             <li class="nav-link">
               <a href="./index.html">
                 <i class="bx bx-grid-alt icon"></i>
-                <span class="text nav-text">Home</span>
+
+                <h3 class="text nav-text">Home</h3>
               </a>
             </li>
+          </ul>
+        </div>
 
+        <div class="menu-links">
+          <ul class="flex flex-col gap-4">
             <li class="nav-link">
               <a href="./pages/azuki.html">
-                <i class="bx bx-image-alt icon"></i>
-                <span class="text nav-text">Hape prime</span>
-              </a>
+                <img src="./img/index/menu-azuki.webp" alt="Azuki" />
+
+                <h3 class="text nav-text">Azuki</h3></a
+              >
             </li>
+
             <li class="nav-link">
               <a href="./pages/CryptoRunners.html">
-                <i class="bx bx-image-alt icon"></i>
-                <span class="text nav-text">Hape</span>
-              </a>
-            </li>
-            <li class="nav-link">
-              <a href="./pages/hape.html">
-                <i class="bx bx-image-alt icon"></i>
-                <span class="text nav-text">Hape</span>
+                <img src="./img/index/menu-runners.webp" alt="Cryptorunner" />
+
+                <h3 class="text nav-text">Runners</h3>
               </a>
             </li>
 
+            <li class="nav-link">
+              <a href="./pages/hape.html">
+                <img src="./img/index/hape.jpg" alt="HAPE PRIME" />
+
+                <h3 class="text nav-text">Hape</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content flex flex-col gap-4">
+          <ul>
             <li class="nav-link">
               <a href="#">
                 <i class="bx bxs-cart-alt icon"></i>
                 <span class="text nav-text">Cart</span>
               </a>
             </li>
-
-            <li class="search-box">
-              <i class="bx bx-search icon"></i>
-              <input type="text" placeholder="Search..." />
-            </li>
           </ul>
-        </div>
 
-        <div class="bottom-content">
-          <li class="mode">
-            <div class="sun-moon">
-              <i class="bx bx-moon icon moon"></i>
-              <i class="bx bx-sun icon sun"></i>
-            </div>
-            <span class="mode-text text">Dark mode</span>
+          <div class="bottom-content">
+            <li class="mode">
+              <span class="mode-text text hidden">Dark mode</span>
 
-            <div class="toggle-switch">
-              <span class="switch"></span>
-            </div>
-          </li>
+              <div class="toggle-switch">
+                <span class="switch"></span>
+              </div>
+              <div class="sun-moon">
+                <i class="bx bx-moon icon moon"></i>
+                <i class="bx bx-sun icon sun"></i>
+              </div>
+            </li>
+          </div>
         </div>
-      </div>
+      </section>
     </nav>
+
     <section class="page">
-      <header class="h-80 max-w-screen-2xl m-auto">
+      <header
+        class="h-80 lg:h-60 m-auto bg-[url('./img/index/home-gradient-light.png')]"
+      >
         <div class="first-title">
           <div class="title-gradient">
             <h1>
@@ -109,30 +128,25 @@
               </span>
             </h1>
           </div>
-          <h2>Explore, collect, and sell NFTs</h2>
+          <h2 class="text-base">Explore, collect, and sell NFTs</h2>
         </div>
       </header>
       <main>
-        <section class="swiper w-11/12 py-16">
-          <h2 class="text-2xl text-center">top ten</h2>
+        <section
+          class="swiper mx-auto w-full py-10 px-12 lg:pt-6 pb-14 sm:px-12 lg:max-w-7xl"
+        >
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper mt-6">
             <!-- Slides -->
             <div class="swiper-slide">
               <picture>
-                <source media="(min-width: 1024px)" srcset="./img/azuki/lg/6993.webp">
                 <source
-                  type="image/avif"
-                  srcset="./img/azuki/avif/6993.avif"
+                  media="(min-width: 1024px)"
+                  srcset="./img/azuki/lg/6993.webp"
                 />
-                <source
-                  type="image/webp"
-                  srcset="./img/azuki/webp/6993.webp"
-                />
-                <source
-                  type="image/jpg"
-                  srcset="./img/azuki/jpg/6993.jpg"
-                />
+                <source type="image/avif" srcset="./img/azuki/avif/6993.avif" />
+                <source type="image/webp" srcset="./img/azuki/webp/6993.webp" />
+                <source type="image/jpg" srcset="./img/azuki/jpg/6993.jpg" />
                 <img
                   src="./img/azuki/jpg/6993.jpg"
                   alt="azuki #6993"
@@ -153,20 +167,13 @@
             <div class="swiper-slide">
               <picture>
                 <source
-                  type="image/avif"
-                  srcset="./img/azukiArt/avif/3253.avif"
-                />
-                <source
                   type="image/webp"
-                  srcset="./img/azukiArt/webp/3253.webp"
+                  srcset="./img/CryptoRunners/webp/0001.webp"
                 />
-                <source
-                  type="image/jpg"
-                  srcset="./img/azukiArt/jpg/3253.jpg"
-                />
+
                 <img
-                  src="./img/azukiArt/jpg/3253.jpg"
-                  alt="AzukiArt #3253"
+                  src="./img/CryptoRunners/webp/0001.webp"
+                  alt="AzukiArt #0001"
                   class="h-full w-full object-cover object-center lg:h-full lg:w-full"
                 />
               </picture>
@@ -174,7 +181,7 @@
                 <h3 class="text-sm text-white font-semibold">
                   <a href="#">
                     <span aria-hidden="true" class="absolute inset-0"></span>
-                    AzukiArt #3253
+                    AzukiArt #0001
                   </a>
                 </h3>
 
@@ -183,19 +190,13 @@
             </div>
             <div class="swiper-slide">
               <picture>
-                <source media="(min-width: 1024px)" srcset="./img/azuki/lg/7156.webp">
                 <source
-                  type="image/avif"
-                  srcset="./img/azuki/avif/7156.avif"
+                  media="(min-width: 1024px)"
+                  srcset="./img/azuki/lg/7156.webp"
                 />
-                <source
-                  type="image/webp"
-                  srcset="./img/azuki/webp/7156.webp"
-                />
-                <source
-                  type="image/jpg"
-                  srcset="./img/azuki/jpg/7156.jpg"
-                />
+                <source type="image/avif" srcset="./img/azuki/avif/7156.avif" />
+                <source type="image/webp" srcset="./img/azuki/webp/7156.webp" />
+                <source type="image/jpg" srcset="./img/azuki/jpg/7156.jpg" />
                 <img
                   src="./img/azuki/jpg/7156.jpg"
                   alt="azuki #7156"
@@ -216,20 +217,13 @@
             <div class="swiper-slide">
               <picture>
                 <source
-                  type="image/avif"
-                  srcset="./img/azukiArt/avif/1731.avif"
-                />
-                <source
                   type="image/webp"
-                  srcset="./img/azukiArt/webp/1731.webp"
+                  srcset="./img/CryptoRunners/webp/0001.webp"
                 />
-                <source
-                  type="image/jpg"
-                  srcset="./img/azukiArt/jpg/1731.jpg"
-                />
+
                 <img
-                  src="./img/azukiArt/jpg/1731.jpg"
-                  alt="AzukiArt #1731"
+                  src="./img/CryptoRunners/webp/0001.webp"
+                  alt="AzukiArt #0001"
                   class="h-full w-full object-cover object-center lg:h-full lg:w-full"
                 />
               </picture>
@@ -237,7 +231,7 @@
                 <h3 class="text-sm text-white font-semibold">
                   <a href="#">
                     <span aria-hidden="true" class="absolute inset-0"></span>
-                    AzukiArt #1731
+                    AzukiArt #0001
                   </a>
                 </h3>
 
@@ -246,18 +240,9 @@
             </div>
             <div class="swiper-slide">
               <picture>
-                <source
-                  type="image/avif"
-                  srcset="./img/hape/avif/1590.avif"
-                />
-                <source
-                  type="image/webp"
-                  srcset="./img/hape/webp/1590.webp"
-                />
-                <source
-                  type="image/jpg"
-                  srcset="./img/hape/jpg/1590.jpg"
-                />
+                <source type="image/avif" srcset="./img/hape/avif/1590.avif" />
+                <source type="image/webp" srcset="./img/hape/webp/1590.webp" />
+                <source type="image/jpg" srcset="./img/hape/jpg/1590.jpg" />
                 <img
                   src="./img/hape/jpg/1590.jpg"
                   alt="HAPE #1590"
@@ -278,19 +263,13 @@
             </div>
             <div class="swiper-slide">
               <picture>
-                <source media="(min-width: 1024px)" srcset="./img/azuki/lg/6531.webp">
                 <source
-                  type="image/avif"
-                  srcset="./img/azuki/avif/6531.avif"
+                  media="(min-width: 1024px)"
+                  srcset="./img/azuki/lg/6531.webp"
                 />
-                <source
-                  type="image/webp"
-                  srcset="./img/azuki/webp/6531.webp"
-                />
-                <source
-                  type="image/jpg"
-                  srcset="./img/azuki/jpg/6531.jpg"
-                />
+                <source type="image/avif" srcset="./img/azuki/avif/6531.avif" />
+                <source type="image/webp" srcset="./img/azuki/webp/6531.webp" />
+                <source type="image/jpg" srcset="./img/azuki/jpg/6531.jpg" />
                 <img
                   src="./img/azuki/jpg/6531.jpg"
                   alt="azuki #6531"
@@ -310,18 +289,9 @@
             </div>
             <div class="swiper-slide">
               <picture>
-                <source
-                  type="image/avif"
-                  srcset="./img/hape/avif/4863.avif"
-                />
-                <source
-                  type="image/webp"
-                  srcset="./img/hape/webp/4863.webp"
-                />
-                <source
-                  type="image/jpg"
-                  srcset="./img/hape/jpg/4863.jpg"
-                />
+                <source type="image/avif" srcset="./img/hape/avif/4863.avif" />
+                <source type="image/webp" srcset="./img/hape/webp/4863.webp" />
+                <source type="image/jpg" srcset="./img/hape/jpg/4863.jpg" />
                 <img
                   src="./img/hape/jpg/4863.jpg"
                   alt="HAPE #4863"
@@ -343,20 +313,13 @@
             <div class="swiper-slide">
               <picture>
                 <source
-                  type="image/avif"
-                  srcset="./img/azukiArt/avif/509.avif"
-                />
-                <source
                   type="image/webp"
-                  srcset="./img/azukiArt/webp/509.webp"
+                  srcset="./img/CryptoRunners/webp/0001.webp"
                 />
-                <source
-                  type="image/jpg"
-                  srcset="./img/azukiArt/jpg/509jpg"
-                />
+
                 <img
-                  src="./img/azukiArt/jpg/509.jpg"
-                  alt="AzukiArt #509"
+                  src="./img/CryptoRunners/webp/0001.webp"
+                  alt="AzukiArt #0001"
                   class="h-full w-full object-cover object-center lg:h-full lg:w-full"
                 />
               </picture>
@@ -364,7 +327,7 @@
                 <h3 class="text-sm text-white font-semibold">
                   <a href="#">
                     <span aria-hidden="true" class="absolute inset-0"></span>
-                    AzukiArt #509
+                    AzukiArt #0001
                   </a>
                 </h3>
 
@@ -373,18 +336,9 @@
             </div>
             <div class="swiper-slide">
               <picture>
-                <source
-                  type="image/avif"
-                  srcset="./img/hape/avif/2353.avif"
-                />
-                <source
-                  type="image/webp"
-                  srcset="./img/hape/webp/2353.webp"
-                />
-                <source
-                  type="image/jpg"
-                  srcset="./img/hape/jpg/2353.jpg"
-                />
+                <source type="image/avif" srcset="./img/hape/avif/2353.avif" />
+                <source type="image/webp" srcset="./img/hape/webp/2353.webp" />
+                <source type="image/jpg" srcset="./img/hape/jpg/2353.jpg" />
                 <img
                   src="./img/hape/jpg/2353jpg"
                   alt="HAPE #2353"
@@ -406,20 +360,13 @@
             <div class="swiper-slide">
               <picture>
                 <source
-                  type="image/avif"
-                  srcset="./img/azukiArt/avif/3409.avif"
-                />
-                <source
                   type="image/webp"
-                  srcset="./img/azukiArt/webp/3409.webp"
+                  srcset="./img/CryptoRunners/webp/0001.webp"
                 />
-                <source
-                  type="image/jpg"
-                  srcset="./img/azukiArt/jpg/3409jpg"
-                />
+
                 <img
-                  src="./img/azukiArt/jpg/3409.jpg"
-                  alt="AzukiArt #3409"
+                  src="./img/CryptoRunners/webp/0001.webp"
+                  alt="AzukiArt #0001"
                   class="h-full w-full object-cover object-center lg:h-full lg:w-full"
                 />
               </picture>
@@ -427,7 +374,7 @@
                 <h3 class="text-sm text-white font-semibold">
                   <a href="#">
                     <span aria-hidden="true" class="absolute inset-0"></span>
-                    AzukiArt #3409
+                    AzukiArt #0001
                   </a>
                 </h3>
 
@@ -436,40 +383,35 @@
             </div>
           </div>
           <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <!-- If we need scrollbar -->
+          <div class="swiper-pagination p-b-12"></div>
         </section>
 
-        <section class="nft-section w-11/12 m-auto">
-          <div class="mx-auto w-full py-16">
-            <h2 class="text-center">Notable collections</h2>
+        <section class="nft-section">
+          <div
+            class="mx-auto w-11/12 py-10 px-4 lg:py-4 sm:px-6 lg:w-full lg:max-w-7xl lg:px-8"
+          >
+            <h2 class="text-left p-2 border-t-2 mt-4 md:mt-8 lg:mt-12">
+              Notable collections
+            </h2>
 
             <div
-              class="mt-6 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-8 sm:gap-4"
+              class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-4 py-12"
             >
               <div class="collections relative">
                 <div
                   class="img aspect-w-1 aspect-h-1 w-full overflow-hidden group-hover:opacity-75 lg:aspect-none"
                 >
-                  <img
-                    src="./img/index/azuki.jpg"
-                    alt=""
-                  />
+                  <img src="./img/index/azuki.jpg" alt="Azuki" />
                 </div>
                 <div class="mt-4">
                   <div>
-                    <h3 class="text-center text-sm text-black font-bold">
-                      <a href="./pages/azuki.html">
+                    <h3 class="text-center text-base font-semibold">
+                      <a href="./pages/azuki.html" class="block">
                         <span
                           aria-hidden="true"
                           class="absolute inset-0"
                         ></span>
-                        AZUKI
+                        Azuki
                       </a>
                     </h3>
                   </div>
@@ -480,19 +422,20 @@
                 <div
                   class="img aspect-w-1 aspect-h-1 w-full overflow-hidden group-hover:opacity-75 lg:aspect-none"
                 >
-                <img
-                src="./img/azukiArt/webp/1664.webp"
-                alt="azukiArt"
-              /></div>
+                  <img
+                    src="./img/CryptoRunners/webp/0998.webp"
+                    alt="CryptoRunners"
+                  />
+                </div>
                 <div class="mt-4">
                   <div>
-                    <h3 class="text-center text-sm text-black font-bold">
-                      <a href="./pages/CryptoRunners.html">
+                    <h3 class="text-center text-base font-semibold">
+                      <a href="./pages/CryptoRunners.html" class="block">
                         <span
                           aria-hidden="true"
                           class="absolute inset-0"
                         ></span>
-                        AZUKI ART
+                        Ctypto Runners
                       </a>
                     </h3>
                   </div>
@@ -501,20 +444,38 @@
               <div class="collections relative">
                 <div
                   class="img aspect-w-1 aspect-h-1 w-full overflow-hidden group-hover:opacity-75 lg:aspect-none"
-                  
-                > <img
-                src="./img/index/hape.jpg"
-                alt=""
-              /></div>
+                >
+                  <img src="./img/index/hape.jpg" alt="HAPE PRIME" />
+                </div>
                 <div class="mt-4">
                   <div>
-                    <h3 class="text-center text-sm text-black font-bold">
-                      <a href="./pages/hape.html">
+                    <h3 class="text-center text-base font-semibold">
+                      <a href="./pages/hape.html" class="block">
                         <span
                           aria-hidden="true"
                           class="absolute inset-0"
                         ></span>
-                        HAPE PRIME
+                        Hape Prime
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="collections relative">
+                <div
+                  class="img aspect-w-1 aspect-h-1 w-full overflow-hidden group-hover:opacity-75 lg:aspect-none bg-pink-600 rounded-lg"
+                >
+                  <img src="./img/index/comming.png" alt="HAPE PRIME" />
+                </div>
+                <div class="mt-4">
+                  <div>
+                    <h3 class="text-center text-base font-semibold">
+                      <a href="./pages/hape.html" class="block">
+                        <span
+                          aria-hidden="true"
+                          class="absolute inset-0"
+                        ></span>
+                        Comming Soon
                       </a>
                     </h3>
                   </div>
@@ -524,8 +485,33 @@
           </div>
         </section>
       </main>
+      <footer class="mt-6">
+        <div
+          class="max-w-7xl mx-auto pt-16 pb-2 px-4 overflow-hidden sm:px-6 lg:px-8"
+        >
+          <div class="mt-8 flex justify-center space-x-6">
+            <a href="#" class="hover:text-gray-500 flex flex-col gap-1">
+              <h2>View code</h2>
+
+              <i class="bx bxl-github text-xl"></i>
+            </a>
+
+            <a href="#" class="hover:text-gray-500 flex-col gap-1">
+              <h2>Contact</h2>
+              <i class="bx bx-envelope text-xl"></i>
+            </a>
+
+            <a href="#" class="hover:text-gray-500 flex-col gap-1">
+              <h2>Linkedin</h2>
+              <i class="bx bxl-linkedin-square text-xl"></i>
+            </a>
+          </div>
+          <p class="text-center text-xs text-gray-400 pt-16">
+            &copy; 2022 Developed by Brian Garay.
+          </p>
+        </div>
+      </footer>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    
   </body>
 </html>
