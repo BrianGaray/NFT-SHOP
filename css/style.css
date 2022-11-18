@@ -400,14 +400,11 @@ a {
 .preloader {
   width: 100vw;
   height: 100vh;
-  background: #f6f5ff;
+  background: #757575;
   position: fixed;
   left: 0;
   top: 0;
   z-index: 999;
-}
-.preloader .preloader .dark {
-  background: black;
 }
 
 .loader {
@@ -415,7 +412,7 @@ a {
   height: 3rem;
   border-radius: 50%;
   display: inline-block;
-  border-top: 3px solid #707070;
+  border-top: 3px solid #ccc;
   border-right: 3px solid transparent;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
