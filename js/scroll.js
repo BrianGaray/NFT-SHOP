@@ -1,40 +1,47 @@
-const preloader = document.querySelector(".preloader")
-window.addEventListener("load" , () =>{
-  preloader.style.display = "none";
-})
-
-
-const body = document.querySelector("body"),
-  sidebar = body.querySelector("nav"),
-  toggle = body.querySelector(".toggle"),
-  searchBtn = body.querySelector(".search-box"),
-  modeSwitch = body.querySelector(".toggle-switch"),
-  modeText = body.querySelector(".mode-text");
-
-toggle.addEventListener("click", () => {
-  sidebar.classList.toggle("close");
-});
-
-
-modeSwitch.addEventListener("click", () => {
-  body.classList.toggle("dark");
-
-  if (body.classList.contains("dark")) {
-    modeText.innerText = "Light mode";
-  } else {
-    modeText.innerText = "Dark mode";
-  }
-});
-
 //ScrollReveal
 
-sr = ScrollReveal({
+window.sr = ScrollReveal({
   reset: true,
   distance: "20px",
+});
 
+sr.reveal("header", {
+  duration: 1200,
+  delay: 200,
+  distance: "1px",
+});
+
+sr.reveal(".about", {
+  duration: 1200,
+  delay: 200,
+  distance: "20px",
+});
+
+sr.reveal(".items", {
+  duration: 1200,
+  delay: 200,
+  distance: "20px",
+});
+
+sr.reveal(".swiper", {
+  duration: 1200,
+  delay: 200,
+  distance: "20px",
+});
+
+sr.reveal(".collections", {
+  duration: 1200,
+  delay: 200,
+  distance: "20px",
 });
 
 sr.reveal(".products", {
-  duration:1200,
+  duration: 1200,
   distance: "20px",
+});
+
+sr.reveal(".contact", {
+  duration: 1200,
+  distance: "20px",
+  delay: 200,
 });
