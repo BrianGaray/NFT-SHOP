@@ -13,13 +13,12 @@
         <h3><a href="https://nft-shop-fawn.vercel.app/">Ver sitio web</a></h3>
          <img src="" alt="icon" />
    <div>
-   <h2>LIBRERIAS/FRAMEWORKS:</h2>
+   <h2>LIBRERIAS UTILIZADAS:</h2>
       <ul>
-         <h3><a href="https://tailwindcss.com/docs/installation">Tailwind css</a></h3>
-        <li></li>
-         <h3><a href="https://swiperjs.com/swiper-api">Swiper js</a></h3>
-        <li></li>
-         <h3><a href="https://scrollrevealjs.org/">scrollReveal</a></h3>
+        <h3><a href="https://reactrouter.com/en/main">React Router Dom</a></h3>
+        <li>npm install react-router-dom</li>
+        <h3><a href="https://firebase.google.com/">Firebase</a></h3>
+        <li>npm install firebase</li>
       </ul></div>
     <div>
       <h2> DEPLOY EN VERCEL:</h2>
