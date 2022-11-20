@@ -1,11 +1,10 @@
 @use "./base/reset";
-//@use "./components/bootstrap.scss";
-//@use "./layout/footer/footer.scss";
-//index
+@use "./layout/general/general";
+@use "./layout/main/preloader";
 @use "./layout/header/header";
 @use "./layout/main/main";
-//@use "./layout/index/responsive/reponsive-index";
-//shop
+@use "./layout/nav/sidebar";
+
 
 
 

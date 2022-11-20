@@ -1,100 +1,70 @@
 @use "../../utilities/mixins";
-@import "../../utilities/variables";
 
-.preloader {
-  width: 100vw;
-  height: 100vh;
-  background:  #757575;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 999;
+/* ===== Color palette===== */
+:root {
+  --body-color: #f6f5ff;
+  --sidebar-color: #fff;
+  --primary-color: #e0e0fb;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #e0e0fb;
+  --text-color: #707070;
 
+  /* ====== Transition ====== */
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.3s ease;
 }
 
+/* ===== Page ===== */
 
-.loader {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  display: inline-block;
-  border-top: 3px solid #ccc;
-  border-right: 3px solid transparent;
-  box-sizing: border-box;
-  animation: rotation 1s linear infinite;
+.page {
+  left: 5.5rem;
+  height: max-content;
+  width: calc(100% - 5.5rem);
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
+  @include mixins.media(lg) {
+    width: calc(100% - 15.625rem);
+    left: 15.625rem;
   }
-  100% {
-    transform: rotate(360deg);
+}
+
+.sidebar.close ~ .page {
+  width: calc(100% - 5.5rem);
+  left: 5.5rem;
+}
+
+/* ===== Custom code ===== */
+
+body {
+  background-color: var(--body-color);
+}
+
+.page {
+  background-color: var(--body-color);
+  transition: var(--tran-05);
+
+  span {
+    color: var(--text-color);
   }
-} 
-
-.products {
-  @include mixins.container();
 }
 
-footer {
-  @include mixins.container-two();
-  border-radius: 0;
+.text {
+  color: var(--text-color);
+}
+/* ===== Dark mode ===== */
+
+body.dark {
+  --body-color: #242526;
+  --sidebar-color: #2e3031;
+  --primary-color: #201824;
+  --primary-color-light: #3a3b3c;
+  --toggle-color: #201824;
+  --text-color: #ccc;
 }
 
-h1 {
-  @include mixins.h1();
-}
-h2 {
-  @include mixins.h2();
-  text-transform: capitalize;
-}
-
-p {
-  @include mixins.p();
-  text-transform: capitalize;
-}
-
-a {
-  text-transform: capitalize;
-}
-
-.about {
-  height: 56px;
-}
-
-.notable{
-border-color: #7070702d;
-}
-
-.items{
-  border-color: #7070702d;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  color: rgba(240, 248, 255, 0.233);
-}
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  color: rgba(240, 248, 255, 0.87);
-  transition: 0.5s;
-}
-
-img {
-  border-radius: 0.5rem;
-}
-
-.collections {
-  @include mixins.container();
-  .img {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+body.dark {
+  .switch::before {
+    left: 1.25rem;
   }
 }

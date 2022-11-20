@@ -1,6 +1,6 @@
 @import "./variables";
 
-//contenedores
+/* ===== Container ===== */
 @mixin container() {
   @include margin($padding: 0.5rem, $margin: auto);
   @include glass();
@@ -19,46 +19,41 @@
   gap: $gap;
 }
 
-
-
 @mixin glass() {
   background: rgba(255, 255, 255, 0.014);
   box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.37);
-  backdrop-filter: blur( 3.5px );
-  -webkit-backdrop-filter: blur( 3.5px );
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
   border: 1px solid rgba(255, 255, 255, 0.055);
 }
 
 @mixin glass-two() {
   background: rgba(255, 255, 255, 0.014);
   box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.37);
-  backdrop-filter: blur( 3.5px );
-  -webkit-backdrop-filter: blur( 3.5px );
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
   border-top: 1px solid rgba(255, 255, 255, 0.055);
 }
 
-
-//flex
-@mixin flex($gap, $flex-col, $justify, $items) {
+/* ===== Flex ===== */
+@mixin flex() {
   display: flex;
-  align-items: $items;
-  justify-content: $justify;
-  text-align: center;
-  gap: $gap;
-  flex-direction: $flex-col;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
-//textos
+/* ===== Texts ===== */
+
 @mixin h1() {
   @include margin($margin, $padding);
-  font-weight: 700!important;
-  text-transform: uppercase
+  font-weight: 700 !important;
+  text-transform: uppercase;
 }
 
 @mixin h2() {
   @include margin($margin, $padding);
-  font-weight: 600!important;
- 
+  font-weight: 600 !important;
 }
 
 @mixin p() {
@@ -66,14 +61,14 @@
   font-weight: 500;
 }
 
-//longitud
+/* ===== Longitude ===== */
 
 @mixin margin($margin, $padding) {
   margin: $margin;
   padding: $padding;
 }
 
-//responsive
+/* ===== Responsive ===== */
 
 @mixin media($breakpoint) {
   @media screen and (min-width: map-get($breakpoints, $breakpoint)) {

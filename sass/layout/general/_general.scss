@@ -1,0 +1,48 @@
+@use "../../utilities/mixins";
+@import "../../utilities/variables";
+
+img {
+  border-radius: 0.5rem;
+}
+
+h1 {
+  @include mixins.h1();
+}
+h2 {
+  @include mixins.h2();
+  text-transform: capitalize;
+}
+
+p {
+  @include mixins.p();
+  text-transform: capitalize;
+}
+
+a {
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+
+footer {
+  @include mixins.container-two();
+  border-radius: 0;
+}
+
+.collections {
+  @include mixins.container();
+}
+
+.products {
+  @include mixins.container();
+}
+
+.notable {
+  border-color: #7070702d;
+}
+
+.items {
+  border-color: #7070702d;
+}

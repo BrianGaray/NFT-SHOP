@@ -1,25 +1,9 @@
-$background: black;
-$color-span: #ca4172;
-$url: url();
-
-
-$grid: 50% 50%;
-$size: 0;
-$gap: 1em;
 $padding: 0;
 $margin: 0;
-$rounded-md: 10px;
-$rounded-lg: 16px;
+$rounded-md: 0.5rem;
+$rounded-lg: 1rem;
+$gap: 1rem;
 
-$justify: center;
-$flex-col: column;
-$items: center;
-
-$z-up: 99;
-$z-down: -99;
-
-$width: 100%;
-$height: 100%;
 
 //responsive
 
@@ -30,3 +14,4 @@ $breakpoints: (
   xl: 1280px,
   xxl: 1536px,
 );
+
