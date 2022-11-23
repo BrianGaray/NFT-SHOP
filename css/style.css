@@ -1,8 +1,13 @@
+/* ====== general ====== */
+/* ====== Responsive ====== */
 /* ===== Container ===== */
 /* ===== Flex ===== */
 /* ===== Texts ===== */
 /* ===== Longitude ===== */
 /* ===== Responsive ===== */
+/* ====== general ====== */
+/* ====== Responsive ====== */
+/* ===== Scrollbar CSS ===== */
 * {
   margin: 0;
   padding: 0;
@@ -10,18 +15,34 @@
   scroll-behavior: smooth;
 }
 
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #484449 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--body-color);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.664);
+  border-radius: 0.5rem;
+  border: 3px solid var(--body-color);
+}
+
 html {
   font-size: 0.7813rem;
-}
-
-body {
   scroll-behavior: smooth;
 }
 
-.page {
-  scroll-behavior: smooth;
-}
-
+/* ====== general ====== */
+/* ====== Responsive ====== */
 img {
   border-radius: 0.5rem;
 }
@@ -44,11 +65,9 @@ p {
   margin: 0;
   padding: 0;
   font-weight: 500;
-  text-transform: capitalize;
 }
 
 a {
-  text-transform: capitalize;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
@@ -60,12 +79,9 @@ footer {
   padding: 0rem;
   background: rgba(255, 255, 255, 0.014);
   box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.37);
-  backdrop-filter: blur(3.5px);
-  -webkit-backdrop-filter: blur(3.5px);
   border-top: 1px solid rgba(255, 255, 255, 0.055);
   box-sizing: border-box;
   border-radius: 0.5rem;
-  text-transform: uppercase;
   gap: 1rem;
   border-radius: 0;
 }
@@ -80,7 +96,6 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.055);
   box-sizing: border-box;
   border-radius: 0.5rem;
-  text-transform: uppercase;
   gap: 1rem;
 }
 
@@ -94,7 +109,6 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.055);
   box-sizing: border-box;
   border-radius: 0.5rem;
-  text-transform: uppercase;
   gap: 1rem;
 }
 
@@ -109,34 +123,81 @@ footer {
 .preloader {
   width: 100vw;
   height: 100vh;
-  background: #757575;
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.37);
+  background: rgba(29, 29, 29, 0.8);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.055);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: fixed;
   left: 0;
   top: 0;
   z-index: 999;
 }
-.preloader .loader {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  display: inline-block;
-  border-top: 3px solid #ccc;
-  border-right: 3px solid transparent;
-  box-sizing: border-box;
-  animation: rotation 1s linear infinite;
+.preloader .tetrominos {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-112px, -96px);
 }
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
+.preloader .tetromino {
+  width: 96px;
+  height: 112px;
+  position: absolute;
+  transition: all ease 0.3s;
+  background: url('data:image/svg+xml;utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 684"%3E%3Cpath fill="%23010101" d="M305.7 0L0 170.9v342.3L305.7 684 612 513.2V170.9L305.7 0z"/%3E%3Cpath fill="%23fff" d="M305.7 80.1l-233.6 131 233.6 131 234.2-131-234.2-131"/%3E%3C/svg%3E') no-repeat top center;
+}
+.preloader .box1 {
+  animation: tetromino1 1.5s ease-out infinite;
+}
+.preloader .box2 {
+  animation: tetromino2 1.5s ease-out infinite;
+}
+.preloader .box3 {
+  animation: tetromino3 1.5s ease-out infinite;
+  z-index: 2;
+}
+.preloader .box4 {
+  animation: tetromino4 1.5s ease-out infinite;
+}
+@keyframes tetromino1 {
+  0%, 40% {
+    transform: translate(0, 0);
   }
-  100% {
-    transform: rotate(360deg);
+  50% {
+    transform: translate(48px, -27px);
+  }
+  60%, 100% {
+    transform: translate(96px, 0);
+  }
+}
+@keyframes tetromino2 {
+  0%, 20% {
+    transform: translate(96px, 0px);
+  }
+  40%, 100% {
+    transform: translate(144px, 27px);
+  }
+}
+@keyframes tetromino3 {
+  0% {
+    transform: translate(144px, 27px);
+  }
+  20%, 60% {
+    transform: translate(96px, 54px);
+  }
+  90%, 100% {
+    transform: translate(48px, 27px);
+  }
+}
+@keyframes tetromino4 {
+  0%, 60% {
+    transform: translate(48px, 27px);
+  }
+  90%, 100% {
+    transform: translate(0, 0);
   }
 }
 
@@ -219,8 +280,8 @@ header {
 :root {
   --body-color: #f6f5ff;
   --sidebar-color: #fff;
-  --primary-color: #e0e0fb;
-  --primary-color-light: #f6f5ff;
+  --icon-color: #e0e0fb;
+  --primary-color: #f6f5ff;
   --toggle-color: #e0e0fb;
   --text-color: #707070;
   /* ====== Transition ====== */
@@ -249,6 +310,16 @@ header {
   left: 5.5rem;
 }
 
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  width: 0.7rem;
+  height: 0.7rem;
+  bottom: 0;
+}
+
 /* ===== Custom code ===== */
 body {
   background-color: var(--body-color);
@@ -266,12 +337,16 @@ body {
   color: var(--text-color);
 }
 
+.swiper-pagination-bullet {
+  background: var(--text-color);
+}
+
 /* ===== Dark mode ===== */
 body.dark {
   --body-color: #242526;
   --sidebar-color: #2e3031;
-  --primary-color: #201824;
-  --primary-color-light: #3a3b3c;
+  --icon-color: #201824;
+  --primary-color: #3a3b3c;
   --toggle-color: #201824;
   --text-color: #ccc;
 }
@@ -279,7 +354,12 @@ body.dark {
 body.dark .switch::before {
   left: 1.25rem;
 }
+body.dark .menu-bar .mode .sun-moon .sun {
+  opacity: 1;
+}
 
+/* ====== general ====== */
+/* ====== Responsive ====== */
 /* ===== Sidebar ===== */
 .sidebar {
   position: fixed;
@@ -353,7 +433,7 @@ body.dark .switch::before {
   display: none;
 }
 .menu-bar .mode {
-  height: 3.125rem;
+  min-height: 3.125rem;
   padding: 0.3125rem;
   position: relative;
   display: flex;
@@ -429,19 +509,19 @@ body.dark .switch::before {
   transition: var(--tran-03);
 }
 .sidebar li {
-  background-color: var(--primary-color-light);
+  background-color: var(--primary-color);
 }
 .sidebar li a {
   transition: var(--tran-03);
 }
 
 .menu-bar .mode {
-  background-color: var(--primary-color-light);
+  background-color: var(--primary-color);
   transition: var(--tran-05);
   border-radius: 0.5rem;
 }
 .menu-bar .icon {
-  background-color: var(--primary-color);
+  background-color: var(--icon-color);
 }
 .menu-bar .bottom-content .toggle-switch .switch {
   background-color: var(--toggle-color);

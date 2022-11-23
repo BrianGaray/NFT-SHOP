@@ -8,6 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME</title>
+    
+    <link rel="shortcut icon" href="./img/index/icon.png" />
+
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
@@ -25,8 +28,13 @@
   </head>
 
   <body>
-    <section class="preloader">
-      <span class="loader"></span>
+    <section class="preloader bg-[url('./img/index/home-gradient-light.png')]">
+      <div class='tetrominos'>
+        <div class='tetromino box1'></div>
+        <div class='tetromino box2'></div>
+        <div class='tetromino box3'></div>
+        <div class='tetromino box4'></div>
+      </div>
     </section>
     <nav class="sidebar close">
       <section class="menu-bar flex justify-between flex-col">
@@ -105,7 +113,7 @@
       </section>
     </nav>
 
-    <section class="page">
+    <section class="page text">
       <header
         class="h-80 lg:h-60 m-auto bg-[url('./img/index/home-gradient-light.png')]"
       >
@@ -133,14 +141,13 @@
               </span>
             </h1>
           </div>
-          <h2 class="text text-base">Explore, collect, and sell NFTs</h2>
+          <h2 class="text-base">Explore, collect, and sell NFTs</h2>
         </div>
       </header>
       <main>
         <section
           class="swiper w-full lg:max-w-7xl mx-auto py-10 px-12 lg:pt-6 pb-14 sm:px-12"
         >
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper mt-6">
             <!-- Slides -->
             <div class="swiper-slide">
@@ -178,7 +185,7 @@
 
                 <img
                   src="./img/CryptoRunners/webp/0001.webp"
-                  alt="AzukiArt #0001"
+                  alt="CryptoRunners #0001"
                   class="h-full w-full object-cover object-center lg:h-full lg:w-full"
                 />
               </picture>
@@ -186,7 +193,7 @@
                 <h3 class="text-sm text-white font-semibold">
                   <a href="#">
                     <span aria-hidden="true" class="absolute inset-0"></span>
-                    AzukiArt #0001
+                    Runners #0001
                   </a>
                 </h3>
 
@@ -223,12 +230,12 @@
               <picture>
                 <source
                   type="image/webp"
-                  srcset="./img/CryptoRunners/webp/0001.webp"
+                  srcset="./img/CryptoRunners/webp/0002.webp"
                 />
 
                 <img
-                  src="./img/CryptoRunners/webp/0001.webp"
-                  alt="AzukiArt #0001"
+                  src="./img/CryptoRunners/webp/0002.webp"
+                  alt="CryptoRunners #0002"
                   class="h-full w-full object-cover object-center lg:h-full lg:w-full"
                 />
               </picture>
@@ -236,7 +243,7 @@
                 <h3 class="text-sm text-white font-semibold">
                   <a href="#">
                     <span aria-hidden="true" class="absolute inset-0"></span>
-                    AzukiArt #0001
+                    Runners #0002
                   </a>
                 </h3>
 
@@ -319,12 +326,12 @@
               <picture>
                 <source
                   type="image/webp"
-                  srcset="./img/CryptoRunners/webp/0001.webp"
+                  srcset="./img/CryptoRunners/webp/0993.webp"
                 />
 
                 <img
-                  src="./img/CryptoRunners/webp/0001.webp"
-                  alt="AzukiArt #0001"
+                  src="./img/CryptoRunners/webp/0993webp"
+                  alt="CryptoRunners #0993"
                   class="h-full w-full object-cover object-center lg:h-full lg:w-full"
                 />
               </picture>
@@ -332,7 +339,7 @@
                 <h3 class="text-sm text-white font-semibold">
                   <a href="#">
                     <span aria-hidden="true" class="absolute inset-0"></span>
-                    AzukiArt #0001
+                    Runners #0993
                   </a>
                 </h3>
 
@@ -366,12 +373,12 @@
               <picture>
                 <source
                   type="image/webp"
-                  srcset="./img/CryptoRunners/webp/0001.webp"
+                  srcset="./img/CryptoRunners/webp/0046.webp"
                 />
 
                 <img
-                  src="./img/CryptoRunners/webp/0001.webp"
-                  alt="AzukiArt #0001"
+                  src="./img/CryptoRunners/webp/0046.webp"
+                  alt="CryptoRunners #0046"
                   class="h-full w-full object-cover object-center lg:h-full lg:w-full"
                 />
               </picture>
@@ -379,7 +386,7 @@
                 <h3 class="text-sm text-white font-semibold">
                   <a href="#">
                     <span aria-hidden="true" class="absolute inset-0"></span>
-                    AzukiArt #0001
+                    Runners #0046
                   </a>
                 </h3>
 
@@ -387,7 +394,7 @@
               </div>
             </div>
           </div>
-          <!-- If we need pagination -->
+
           <div class="swiper-pagination p-b-12"></div>
         </section>
 
@@ -395,14 +402,12 @@
           <div
             class="mx-auto w-11/12 py-10 px-4 lg:py-4 sm:px-6 lg:w-full lg:max-w-7xl lg:px-8"
           >
-            <h2
-              class="notable text text-left p-2 border-t-2 mt-4 md:mt-8 lg:mt-12"
-            >
+            <h2 class="notable text-left p-2 border-t-2">
               Notable collections
             </h2>
 
             <div
-              class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-4 py-12"
+              class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 py-12"
             >
               <div class="collections relative">
                 <div
@@ -411,17 +416,12 @@
                   <img src="./img/index/azuki.jpg" alt="Azuki" />
                 </div>
                 <div class="mt-4">
-                  <div>
-                    <h3 class="text-center text-base font-semibold">
-                      <a href="./pages/azuki.html" class="block text">
-                        <span
-                          aria-hidden="true"
-                          class="absolute inset-0"
-                        ></span>
-                        Azuki
-                      </a>
-                    </h3>
-                  </div>
+                  <h3 class="text-center text-base font-semibold">
+                    <a href="./pages/azuki.html" class="block">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Azuki
+                    </a>
+                  </h3>
                 </div>
               </div>
 
@@ -435,17 +435,12 @@
                   />
                 </div>
                 <div class="mt-4">
-                  <div>
-                    <h3 class="text-center text-base font-semibold">
-                      <a href="./pages/CryptoRunners.html" class="block text">
-                        <span
-                          aria-hidden="true"
-                          class="absolute inset-0"
-                        ></span>
-                        Ctypto Runners
-                      </a>
-                    </h3>
-                  </div>
+                  <h3 class="text-center text-base font-semibold">
+                    <a href="./pages/CryptoRunners.html" class="block">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Ctypto Runners
+                    </a>
+                  </h3>
                 </div>
               </div>
               <div class="collections relative">
@@ -455,17 +450,12 @@
                   <img src="./img/index/hape.jpg" alt="HAPE PRIME" />
                 </div>
                 <div class="mt-4">
-                  <div>
-                    <h3 class="text-center text-base font-semibold">
-                      <a href="./pages/hape.html" class="block text">
-                        <span
-                          aria-hidden="true"
-                          class="absolute inset-0"
-                        ></span>
-                        Hape Prime
-                      </a>
-                    </h3>
-                  </div>
+                  <h3 class="text-center text-base font-semibold">
+                    <a href="./pages/hape.html" class="block">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Hape Prime
+                    </a>
+                  </h3>
                 </div>
               </div>
               <div class="collections relative">
@@ -475,17 +465,12 @@
                   <img src="./img/index/comming.png" alt="HAPE PRIME" />
                 </div>
                 <div class="mt-4">
-                  <div>
-                    <h3 class="text-center text-base font-semibold">
-                      <a href="./pages/hape.html" class="block text">
-                        <span
-                          aria-hidden="true"
-                          class="absolute inset-0"
-                        ></span>
-                        Comming Soon
-                      </a>
-                    </h3>
-                  </div>
+                  <h3 class="text-center text-base font-semibold">
+                    <a href="./pages/hape.html" class="block text">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Comming Soon
+                    </a>
+                  </h3>
                 </div>
               </div>
             </div>

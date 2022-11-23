@@ -80,7 +80,7 @@
     display: none;
   }
   & .mode {
-    height: 3.125rem;
+    min-height: 3.125rem;
     padding: 0.3125rem;
     position: relative;
     display: flex;
@@ -163,7 +163,7 @@
   }
 
   li {
-    background-color: var(--primary-color-light);
+    background-color: var(--primary-color);
 
     a {
       transition: var(--tran-03);
@@ -173,13 +173,13 @@
 
 .menu-bar {
   & .mode {
-    background-color: var(--primary-color-light);
+    background-color: var(--primary-color);
     transition: var(--tran-05);
     border-radius: $rounded-md;
   }
 
   .icon {
-    background-color: var(--primary-color);
+    background-color: var(--icon-color);
   }
   .bottom-content .toggle-switch {
     .switch {

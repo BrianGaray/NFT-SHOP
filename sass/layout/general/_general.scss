@@ -15,11 +15,9 @@ h2 {
 
 p {
   @include mixins.p();
-  text-transform: capitalize;
 }
 
 a {
-  text-transform: capitalize;
   display: flex;
   justify-content: space-between;
   gap: 2rem;

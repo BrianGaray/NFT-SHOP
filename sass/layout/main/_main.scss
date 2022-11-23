@@ -4,8 +4,8 @@
 :root {
   --body-color: #f6f5ff;
   --sidebar-color: #fff;
-  --primary-color: #e0e0fb;
-  --primary-color-light: #f6f5ff;
+  --icon-color: #e0e0fb;
+  --primary-color: #f6f5ff;
   --toggle-color: #e0e0fb;
   --text-color: #707070;
 
@@ -34,6 +34,14 @@
   left: 5.5rem;
 }
 
+.swiper-pagination {
+  bottom: 0 !important;
+}
+.swiper-pagination-bullet {
+  width: 0.7rem;
+  height: 0.7rem;
+  bottom: 0;
+}
 /* ===== Custom code ===== */
 
 body {
@@ -52,13 +60,17 @@ body {
 .text {
   color: var(--text-color);
 }
+
+.swiper-pagination-bullet {
+  background: var(--text-color);
+}
 /* ===== Dark mode ===== */
 
 body.dark {
   --body-color: #242526;
   --sidebar-color: #2e3031;
-  --primary-color: #201824;
-  --primary-color-light: #3a3b3c;
+  --icon-color: #201824;
+  --primary-color: #3a3b3c;
   --toggle-color: #201824;
   --text-color: #ccc;
 }
@@ -66,5 +78,14 @@ body.dark {
 body.dark {
   .switch::before {
     left: 1.25rem;
+  }
+  .menu-bar {
+    & .mode {
+      .sun-moon {
+        .sun {
+          opacity: 1;
+        }
+      }
+    }
   }
 }

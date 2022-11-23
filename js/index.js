@@ -1,7 +1,7 @@
 const preloader = document.querySelector(".preloader");
-window.addEventListener("load", () => {
+setTimeout(function () {
   preloader.style.display = "none";
-});
+}, 2000);
 
 const body = document.querySelector("body"),
   sidebar = body.querySelector("nav"),
@@ -34,9 +34,6 @@ modeSwitch.addEventListener("click", () => {
 
 if (localStorage.getItem("dark-mode") === "true") {
   document.body.classList.add("dark");
- 
 } else {
   document.body.classList.remove("dark");
-
 }
-

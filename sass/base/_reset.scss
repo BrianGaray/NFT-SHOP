@@ -1,20 +1,36 @@
 @use "../utilities/mixins";
 @import "../utilities/variables";
+/* ===== Scrollbar CSS ===== */
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; scroll-behavior: smooth;
-  
-}
-
-html{
-  font-size: .7813rem;
-}
-body{
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-.page{
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #484449 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--body-color);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.664);
+  border-radius: 0.5rem;
+  border: 3px solid var(--body-color);
+}
+
+html {
+  font-size: 0.7813rem;
   scroll-behavior: smooth;
 }

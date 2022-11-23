@@ -6,7 +6,6 @@
   @include glass();
   box-sizing: border-box;
   border-radius: 0.5rem;
-  text-transform: uppercase;
   gap: $gap;
 }
 
@@ -15,7 +14,6 @@
   @include glass-two();
   box-sizing: border-box;
   border-radius: 0.5rem;
-  text-transform: uppercase;
   gap: $gap;
 }
 
@@ -30,9 +28,15 @@
 @mixin glass-two() {
   background: rgba(255, 255, 255, 0.014);
   box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.37);
-  backdrop-filter: blur(3.5px);
-  -webkit-backdrop-filter: blur(3.5px);
   border-top: 1px solid rgba(255, 255, 255, 0.055);
+}
+
+@mixin loader() {
+box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.37);
+background: rgba(29, 29, 29, 0.8);
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+backdrop-filter: saturate(180%) blur(20px);
+border-top: 1px solid rgba(255, 255, 255, 0.055);
 }
 
 /* ===== Flex ===== */
