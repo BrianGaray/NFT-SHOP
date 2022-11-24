@@ -19,9 +19,7 @@
 
 @mixin glass() {
   background: rgba(255, 255, 255, 0.014);
-  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.37);
-  backdrop-filter: blur(3.5px);
-  -webkit-backdrop-filter: blur(3.5px);
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.37);;
   border: 1px solid rgba(255, 255, 255, 0.055);
 }
 
