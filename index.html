@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME</title>
-    
-    <link rel="shortcut icon" href="./img/index/icon.png" />
+
+    <link rel="shortcut icon" href="./img/index/icon2.png" />
 
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
@@ -28,14 +28,6 @@
   </head>
 
   <body>
-    <section class="preloader bg-[url('./img/index/home-gradient-light.png')]">
-      <div class='tetrominos'>
-        <div class='tetromino box1'></div>
-        <div class='tetromino box2'></div>
-        <div class='tetromino box3'></div>
-        <div class='tetromino box4'></div>
-      </div>
-    </section>
     <nav class="sidebar close">
       <section class="menu-bar flex justify-between flex-col">
         <div class="bars">
@@ -114,39 +106,56 @@
     </nav>
 
     <section class="page text">
+      <section
+        class="preloader bg-[url('./img/index/home-gradient-light.png')]"
+      >
+        <div class="tetrominos">
+          <div class="tetromino box1"></div>
+          <div class="tetromino box2"></div>
+          <div class="tetromino box3"></div>
+          <div class="tetromino box4"></div>
+        </div>
+      </section>
       <header
         class="h-80 lg:h-60 m-auto bg-[url('./img/index/home-gradient-light.png')]"
       >
         <div class="first-title">
           <div class="title-gradient">
-            <h1>
+            <h1 class="items-end">
               <span
                 style="
-                  --start-color: #7928ca;
-                  --end-color: #ff0080;
-                  --content: 'NFT';
+                  --start-color: #741a5a;
+                  --end-color: #125188;
+                  --content: 'nft';
                 "
               >
-                NFT
+                nft
               </span>
               <span
                 style="
-                  --start-color: #7928ca;
-                  --end-color: #ff0080;
-                  --content: 'Shop';
+                  --start-color: #741a5a;
+                  --end-color: #125188;
+                  --content: 'shop';
                   --animation: a2;
                 "
               >
-                Shop
+                shop
               </span>
+              <img
+                src="./img/index/icon.png"
+                alt="kube nft"
+                class="w-7 h-7 ml-[-0.75rem] rounded-full"
+              />
             </h1>
+            <div class="flex items-center justify-center gap-1">
+              <h2 class="text-base ml-[-0.75rem]">Explore, collect, and sell NFTs</h2>
+            </div>
           </div>
-          <h2 class="text-base">Explore, collect, and sell NFTs</h2>
         </div>
       </header>
       <main>
         <section
-          class="swiper w-full lg:max-w-7xl mx-auto py-10 px-12 lg:pt-6 pb-14 sm:px-12"
+          class="swiper w-full lg:max-w-7xl mx-auto py-10 px-8 lg:pt-6 pb-14 sm:px-12"
         >
           <div class="swiper-wrapper mt-6">
             <!-- Slides -->
@@ -400,14 +409,14 @@
 
         <section class="nft-section">
           <div
-            class="mx-auto w-11/12 py-10 px-4 lg:py-4 sm:px-6 lg:w-full lg:max-w-7xl lg:px-8"
+            class="mx-auto w-11/12 py-10 px-4 lg:py-4 lg:pb-8 sm:px-6 lg:w-full lg:max-w-7xl lg:px-8"
           >
             <h2 class="notable text-left p-2 border-t-2">
               Notable collections
             </h2>
 
             <div
-              class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 py-12"
+              class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 mt-6"
             >
               <div class="collections relative">
                 <div

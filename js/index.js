@@ -1,7 +1,7 @@
 const preloader = document.querySelector(".preloader");
 setTimeout(function () {
   preloader.style.display = "none";
-}, 2000);
+}, 1500);
 
 const body = document.querySelector("body"),
   sidebar = body.querySelector("nav"),
